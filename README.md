@@ -25,7 +25,7 @@ Each component in this repository has specific tasks, explained as follows:
 
 1. **__crop_morphology.ipynb__**
    	Usage is described in the file itself. What this section does is that it crops the image to an area where it just finds textual information. For instance, if it is a scanned copy of a PAN with white background. It will crop it till where it detects the border of the PAN Card. 
-   	Command: `python crop_morphology.py image_pan.jpg` 
+   	Command: `python crop_morphology.ipynb image_pan.jpg` 
 
 2. **__deskew.ipynb__**
    	The intuition can be found at [this link](https://www.pyimagesearch.com/2017/02/20/text-skew-correction-opencv-python/) about implementing deskwing and why is it important when an image to text conversion is involved. Given an image containing a rotated block of text at an unknown angle, we need to correct the text skew by:
@@ -37,15 +37,15 @@ Each component in this repository has specific tasks, explained as follows:
 	3. Rotating the image to correct for the skew.
 		
   	We typically apply text skew correction algorithms in the field of automatic document analysis, but the process itself can be applied to other domains as well. 
-   	Command: `python deskew.py image_pan.jpg`
+   	Command: `python deskew.ipynb image_pan.jpg`
 
 3. **__morph_final.ipynb__**
    	An alternate version to crop_morphology.py in case the efficiency drops. More info can be found [here](http://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html)
-   	Command: `python morph_final.py image_pan.jpg`
+   	Command: `python morph_final.ipynb image_pan.jpg`
 
 4. **__morph_interactive.ipynb__**
    	A playground to morph images as per your need, cycling with various parameters found [here](http://northstar-www.dartmouth.edu/doc/idl/html_6.2/Morphing.html)
-   	Command: `python morph_interactive.py image_pan.jpg`
+   	Command: `python morph_interactive.ipynb image_pan.jpg`
 	
 	Press 1 & 2 to cycle through the different modes and the CV window will show the sliders to adjust the intensity of the preprocessing steps involved. 
 	
@@ -54,7 +54,7 @@ Each component in this repository has specific tasks, explained as follows:
 5. **__json2csv.ipynb__**
    	Once you have converted all the files into their respective extracted JSONs, you can export them into a CSV for analysis and other usage.
 	
-	Command: `python json2csv.py jsons output.csv` 
+	Command: `python json2csv.ipynb jsons output.csv` 
 	
 	Note: `jsons` is the folder name and not to be specified as \jsons, the program will automatically treat the folder specified to be in the directory of the program itself. In case `output.csv` is not written into the disk, create a flat-file with the same name which will be empty and there will be no write errors.
 
@@ -70,7 +70,7 @@ Each component in this repository has specific tasks, explained as follows:
 9. **__preprocess_v2.ipynb__**
 	More information on this version of preprocessing can be found [here](http://www.m.cs.osakafu-u.ac.jp/cbdar2007/proceedings/papers/O1-1.pdf) which is based on the paper *Font and Background Color Independent Binarization*. For optimum accuracy prior to running the image through the Tesseract Engine, kindly run this file. 
 	
-	Command: `python preprocess_v2.py input.jpg output.jpg`
+	Command: `python preprocess_v2.ipynb input.jpg output.jpg`
   
   # Preprocessing Commands
 
