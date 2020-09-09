@@ -5,7 +5,7 @@ It won't run on noisy images with salt & pepper grains and/or poor image quality
 
 ----------------------------------
 
-1. PyCharm Community Edition running Python 3.6
+1. Jupyter Notebook
 2. Pillow 
 3. [pytesseract](https://opensource.google.com/projects/tesseract)
 4. cv2
